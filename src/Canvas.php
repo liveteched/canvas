@@ -21,7 +21,9 @@ class Canvas
             return '';
         }
 
-        return InstalledVersions::getPrettyVersion('austintoddj/canvas');
+        return '1.0';
+//
+//        return InstalledVersions::getPrettyVersion('liveteched/canvas');
     }
 
     /**
