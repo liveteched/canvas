@@ -92,6 +92,17 @@
                     />
                 </div>
 
+                <div class="form-group my-3">
+                    <textarea-autosize
+                        v-model="post.subtitle"
+                        :placeholder="Subtitle"
+                        style="font-size: 32px"
+                        class="w-100 form-control-lg border-0 font-serif bg-transparent px-0"
+                        rows="1"
+                        @input.native="updatePost"
+                    />
+                </div>
+
                 <div class="form-group my-2">
                     <quill-editor :key="post.id" :post="post" @update-post="savePost" />
                 </div>
@@ -178,6 +189,7 @@ export default {
             post: {
                 id: null,
                 title: null,
+                subtitle: null,
                 slug: null,
                 summary: null,
                 body: null,
@@ -242,6 +254,7 @@ export default {
                 .then(({ data }) => {
                     this.post.id = data.post.id;
                     this.post.title = get(data.post, 'title', '');
+                    this.post.subtitle = get(data.post, 'subtitle', '');
                     this.post.slug = get(data.post, 'slug', '');
                     this.post.summary = get(data.post, 'summary', '');
                     this.post.body = get(data.post, 'body', '');

@@ -17,6 +17,7 @@ class CreateCanvasTables extends Migration
             $table->uuid('id')->primary();
             $table->string('slug');
             $table->string('title');
+            $table->string('subtitle')->nullable();
             $table->text('summary')->nullable();
             $table->text('body')->nullable();
             $table->dateTime('published_at')->nullable();
