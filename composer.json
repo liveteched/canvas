@@ -1,5 +1,5 @@
 {
-    "name": "austintoddj/canvas",
+    "name": "liveteched/canvas",
     "description": "A Laravel publishing platform",
     "keywords": [
         "blog",
@@ -11,17 +11,21 @@
     "license": "MIT",
     "homepage": "https://trycanvas.app",
     "support": {
-        "issues": "https://github.com/austintoddj/canvas/issues",
-        "source": "https://github.com/austintoddj/canvas"
+        "issues": "https://github.com/liveteched/canvas/issues",
+        "source": "https://github.com/liveteched/canvas"
     },
     "authors": [
         {
             "name": "Todd Austin",
             "email": "austin.todd.j@gmail.com"
+        },
+        {
+            "name": "Sasa Milasinovic",
+            "email": "smilasinovic@golivetech.com"
         }
     ],
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^7.3|^8.0|^8.1|^8.2",
         "ext-json": "*",
         "laravel/framework": "^6.0|^7.0|^8.0|^9.0|^10.0"
     },
