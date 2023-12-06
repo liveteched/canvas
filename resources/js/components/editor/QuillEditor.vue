@@ -174,9 +174,10 @@ export default {
                 modules: {
                     syntax: true,
                     toolbar: [
-                        ['bold', 'italic', 'code', 'link'],
+                        ['bold', 'italic', 'link'],
                         [{ header: '2' }, { header: '3' }],
                         ['blockquote', 'code-block'],
+                        [{ 'align': [] }],
                     ],
                 },
                 theme: 'bubble',
