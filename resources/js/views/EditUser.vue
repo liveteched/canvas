@@ -116,6 +116,23 @@
                                     <strong>{{ invalidName.error }}</strong>
                                 </span>
                             </div>
+
+                            <div class="form-group row">
+                                <label for="name" class="font-weight-bold text-uppercase text-muted small">
+                                    Title (ex: CEO, CFO, Event Coordinator...)
+                                </label>
+                                <input
+                                    v-model="user.title"
+                                    id="title"
+                                    name="title"
+                                    type="text"
+                                    required
+                                    class="form-control border-0"
+                                    :title="trans.title"
+                                    :placeholder="trans.title"
+                                />
+                            </div>
+
                             <div class="form-group row">
                                 <label for="email" class="font-weight-bold text-uppercase text-muted small">
                                     Email
