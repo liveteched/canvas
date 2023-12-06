@@ -113,6 +113,7 @@ return [
     'thirty_days' => '30 days',
     'timezone' => 'timezone',
     'title' => 'Title',
+    'subtitle' => 'Subtitle',
     'to' => 'to',
     'to_update_run' => 'To update, run:',
     'toggle_dark_mode' => 'Use a dark appearance for Canvas.',
