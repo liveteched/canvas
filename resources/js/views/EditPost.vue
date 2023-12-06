@@ -95,7 +95,7 @@
                 <div class="form-group my-3">
                     <textarea-autosize
                         v-model="post.subtitle"
-                        :placeholder="Subtitle"
+                        placeholder="Subtitle"
                         style="font-size: 32px"
                         class="w-100 form-control-lg border-0 font-serif bg-transparent px-0"
                         rows="1"

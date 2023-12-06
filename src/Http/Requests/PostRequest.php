@@ -33,6 +33,7 @@ class PostRequest extends FormRequest
                 })->ignore(request('id'))->whereNull('deleted_at'),
             ],
             'title' => 'required',
+            'subtitle' => 'nullable|string',
             'summary' => 'nullable|string',
             'body' => 'nullable|string',
             'published_at' => 'nullable|date',
