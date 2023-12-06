@@ -85,8 +85,8 @@
                     <textarea-autosize
                         v-model="post.title"
                         :placeholder="trans.title"
-                        style="font-size: 42px"
-                        class="w-100 form-control-lg border-bottom font-serif bg-transparent px-0"
+                        style="font-size: 42px; border-bottom: 1px solid #ccc!important;"
+                        class="w-100 form-control-lg border-0 font-serif bg-transparent px-0"
                         rows="1"
                         @input.native="updatePost"
                     />
@@ -96,8 +96,8 @@
                     <textarea-autosize
                         v-model="post.subtitle"
                         :placeholder="trans.subtitle"
-                        style="font-size: 32px"
-                        class="w-100 form-control-lg border-bottom font-serif bg-transparent px-0"
+                        style="font-size: 32px; border-bottom: 1px solid #ccc!important;"
+                        class="w-100 form-control-lg border-0 font-serif bg-transparent px-0"
                         rows="1"
                         @input.native="updatePost"
                     />
