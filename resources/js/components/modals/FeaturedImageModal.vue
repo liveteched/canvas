@@ -357,3 +357,9 @@ export default {
     },
 };
 </script>
+
+<style>
+.close {
+    opacity: 1!important;
+}
+</style>
